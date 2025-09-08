@@ -1,0 +1,56 @@
+
+[
+    {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "timezone": "Europe/Stockholm"
+    },
+
+    {
+        "city": "New York",
+        "country": "USA",
+        "timezone": "America/New_York"
+    },
+
+    {
+        "city": "Tokyo",
+        "country": "Japan",
+        "timezone": "Asia/Tokyo"
+    },
+
+    {
+        "city": "London",
+        "country": "UK",
+        "timezone": "Europe/London"
+    },
+
+    {
+        "city": "Sydney",
+        "country": "Australia",
+        "timezone": "Australia/Sydney"
+    },
+
+    {
+        "city": "Cairo",
+        "country": "Egypt",
+        "timezone": "Africa/Cairo"
+    },
+    
+    {
+        "city": "Moscow",
+        "country": "Russia",
+        "timezone": "Europe/Moscow"
+    },
+
+    {
+        "city": "Rio de Janeiro",
+        "country": "Brazil",
+        "timezone": "America/Sao_Paulo"
+    }, 
+
+    {
+        "city": "Beijing",
+        "country": "China",
+        "timezone": "Asia/Shanghai"
+    }
+]
