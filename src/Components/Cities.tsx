@@ -1,6 +1,7 @@
 import cityData from "../defaultCities.json";
 import { useState, useEffect } from "react";
 import React from "react";
+import "../Styles/citiesStyle.css";
 
 // Component to display the default cities that is imported from the json file
 
@@ -28,9 +29,9 @@ we can now see the local time*/
     }).format(new Date());
   }
 
-
+  
   return (
-    <>
+    <main className="defaultCitiesContainer">
       <ul>
         {cities.map((city: City, index: number) => (
           <li key={index}>
@@ -38,6 +39,6 @@ we can now see the local time*/
           </li>
         ))}
       </ul>
-    </>
+    </main>
   );
 };
