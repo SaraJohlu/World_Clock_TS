@@ -1,5 +1,6 @@
 import { Cities } from './Components/Cities.tsx';
 import { SavedCities } from './Components/SavedCities.tsx';
+import { UserAddCity } from './Components/UserAddCity.tsx';
 
 
 
@@ -13,6 +14,7 @@ console.log(Cities)
     
       <Cities /> {/*Cities component imported*/}
       <SavedCities />
+      <UserAddCity />
       
 
 

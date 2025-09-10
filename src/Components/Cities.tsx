@@ -7,7 +7,7 @@ import { AddToLocalStorage } from "./Localstorage";
 
 // Component to display the default cities that is imported from the json file
 
-interface City {
+export interface City {
   city: string;
   country: string;
   timezone: string;
@@ -29,7 +29,6 @@ we can now see the local time*/
       timeZone: timezone,
       hour: "2-digit",
       minute: "2-digit",
-      second: "2-digit",
     }).format(new Date());
   };
 
@@ -38,6 +37,7 @@ we can now see the local time*/
     setSelectedCities(update);
     AddToLocalStorage(update);
     console.log(update);
+
   };
 
   return (
