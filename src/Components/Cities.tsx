@@ -1,28 +1,18 @@
 import cityData from "../defaultCities.json";
-import { useState, useEffect } from "react";
 import React from "react";
 import "../Styles/citiesStyle.css";
-import { AddToLocalStorage } from "./Localstorage";
+import type{ City } from "./CityData"
 
-
-// Component to display the default cities that is imported from the json file
-
-export interface City {
-  city: string;
-  country: string;
-  timezone: string;
+//Creating props to use App.tsx state
+interface propsCities {
+  cities: City[];
+  setCities: React.Dispatch<React.SetStateAction<City[]>>;
 }
-/*getting our JSON file with the default cities, will be one of our APIs*/
-export const Cities: React.FC = () => {
-  const [cities, setCities] = useState<City[]>([]);
-  const [selectCity, setSelectedCities] = useState<City[]>([]);
-  
 
-  useEffect(() => {
-    setCities(cityData);
-  }, []);
-
-  /*Function that converts the timezone into local time, instead of seeing which timezone the country/city is in
+/*getting our JSON file with the default cities*/
+export const Cities: React.FC<propsCities> = ({ setCities }) => {
+ 
+/*Function that converts the timezone into local time, instead of seeing which timezone the country/city is in
 we can now see the local time*/
   const localTime = (timezone: string) => {
     return new Intl.DateTimeFormat("sv-SE", {
@@ -32,21 +22,17 @@ we can now see the local time*/
     }).format(new Date());
   };
 
-  const AddSavedCity = (city: City) => {
-    const update = [...selectCity, city];
-    setSelectedCities(update);
-    AddToLocalStorage(update);
-    console.log(update);
-
+  const AddCity = (city: City) => {
+    setCities(prev => [...prev,city]); // Add to App.tsx list
   };
 
   return (
     <main className="defaultCitiesContainer">
       <ul>
-        {cities.map((city: City, index: number) => (
+        {cityData.map((city, index) => (
           <li key={index}>
             {city.city}, {city.country} - {localTime(city.timezone)}
-            <button onClick={() => AddSavedCity(city)}>Save</button>
+            <button onClick={() => AddCity(city)}>&#129505;</button>
           </li>
         ))}
       </ul>

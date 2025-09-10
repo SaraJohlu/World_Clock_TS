@@ -1,16 +1,10 @@
-  import { useState } from "react"
-  import { storageKey } from "./Localstorage"
+ import type { City } from "./CityData"
 
-  interface City {
-    city: string,
-    country: string,
-    timezone: string
-  }
-
-  export const SavedCities: React.FC = () => {
-    const [savedCities, setSavedCities] = useState<City[]>([]);
-    
-      const localTime = (timezone: string) => {
+interface SavedCitiesProps {
+  cities: City[]; // Add from App.tsx
+}
+  export const SavedCities: React.FC<SavedCitiesProps> = ({ cities }) => {
+    const localTime = (timezone: string) => {
     return new Intl.DateTimeFormat("sv-SE", {
       timeZone: timezone,
       hour: "2-digit",
@@ -19,20 +13,12 @@
     }).format(new Date());
   };
 
-    const showSavedCities = () => {
-    const savedCities = localStorage.getItem(storageKey);
-    if (savedCities) {
-      setSavedCities(JSON.parse(savedCities));
-    } else {
-      setSavedCities([]);
-    }
-  };
-
   return (<main>
-  <button onClick={showSavedCities}>Sparade städer</button>
-   {savedCities.length > 0 && (
+  <h2>Dina favoriter</h2>
+  <p>Här sparas dina tillagda städer samt markerade favoriter</p>
+   {cities.length > 0 && (
         <ul>
-          {savedCities.map((city, index) => (
+          {cities.map((city, index) => (
             <li key={index}>
               {city.city}, {city.country} - {localTime(city.timezone)}
             </li>

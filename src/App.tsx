@@ -1,23 +1,32 @@
 import { Cities } from './Components/Cities.tsx';
 import { SavedCities } from './Components/SavedCities.tsx';
-import { UserAddCity } from './Components/UserAddCity.tsx';
-
-
+import { AddNewCity }  from './Components/AddNewCity.tsx';
+import { useState } from 'react';
+import { storageKey } from './Components/Localstorage.tsx';
+import { useEffect } from 'react';
+import cityData from "./defaultCities.json"
+import type { City } from './Components/CityData.tsx';
 
 export default function App() {
-console.log(Cities)
+ const [cities, setCities] = useState<City[]>(() => {
+const savedCities = localStorage.getItem(storageKey);
+ if(savedCities) return JSON.parse(savedCities)
+  return cityData;
+ });
 
+  useEffect(() => {
+    localStorage.setItem(storageKey, JSON.stringify(cities));
+  }, [cities]);
 
   return (
     <>
     <h1>World Clock</h1>
+    <p>"Everyone Has Their Own Timezone</p>
     
-      <Cities /> {/*Cities component imported*/}
-      <SavedCities />
-      <UserAddCity />
+      <Cities cities={cities} setCities={setCities}/> {/*Cities component imported*/}
+      <SavedCities cities={cities} />
+      <AddNewCity newCity={cities} setNewCity={setCities} />
       
-
-
     </>
   )
 }
