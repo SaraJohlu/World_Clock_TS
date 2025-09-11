@@ -1,0 +1,68 @@
+.SavedCityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    height: 50vh;
+    
+}
+
+.SavedCityText h2 {
+    font-size: larger;
+    margin: 0;
+}
+
+.SavedCityText p {
+    font-size: large;
+    margin: 0;
+}
+
+.SavedCityContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+}
+
+.SavedCityContainer li {
+    height: 6vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.NoSavedCities{ 
+    font-size: large;
+    font-weight: 700;
+}
+
+.SavedCityContainer button {
+    width: 6vw;
+    height: 3vh;
+    border-radius: 100%;
+    font-size:medium;
+    color: rgb(128, 0, 0);
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

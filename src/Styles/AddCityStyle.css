@@ -1,0 +1,68 @@
+.addCityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    height: 50vh;
+}
+
+.addCityContainer h1 {
+    font-size: larger;
+}
+ .addCityContainer span {
+    width: 100%;
+    height: 35vh;
+    padding: 30px;
+ }
+.addCityContainer input {
+    width: 60%;
+    height: 3.5vh;
+
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    
+}
+
+.addCityContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.addCityContainer li {
+    height: 4vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.addCityContainer button {
+    width: 20vw;
+    height: 4vh;
+    color: green;
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}

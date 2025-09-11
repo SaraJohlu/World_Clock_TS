@@ -4,16 +4,100 @@
         "country": "Sweden",
         "timezone": "Europe/Stockholm"
     },
-
     {
         "city": "New York",
         "country": "USA",
         "timezone": "America/New_York"
     },
-
     {
         "city": "London",
         "country": "UK",
         "timezone": "Europe/London"
+    },
+    {
+        "city": "Tokyo",
+        "country":"Japan",
+        "timezone": "Asia/Tokyo"
+    },
+    {
+        "city": "Los Angeles",
+        "country":"USA",
+        "timezone": "America/Los_Angeles"
+    },
+    {
+        "city": "Istanbul",
+        "country":"Turkey",
+        "timezone": "Europe/Istanbul"
+    },
+    {
+        "city": "Paris",
+        "country":"France",
+        "timezone": "Europe/Paris"
+    },
+    {
+        "city": "São Paulo",
+        "country":"Brazil",
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "city": "Cairo",
+        "country":"Egypt",
+        "timezone": "Africa/Cairo"
+    },
+    {
+        "city": "Singapore",
+        "country":"Singapore",
+        "timezone": "Asia/Singapore"
+    },
+    {
+        "city": "Mexico City",
+        "country":"Mexico",
+        "timezone": "America/Mexico_City"
+    },
+    {
+        "city": "Toronto",
+        "country":"Canada",
+        "timezone": "America/Toronto"
+    },
+    {
+        "city": "Seoul",
+        "country":"South Korea",
+        "timezone": "Asia/Seoul"
+    },
+    {
+        "city": "Dubai",
+        "country":"UAE",
+        "timezone": "Asia/Dubai"
+    },
+    {
+        "city": "Johannesburg",
+        "country":"South Africa",
+        "timezone": "Africa/Johannesburg"
+    },
+    {
+        "city": "Buenos Aires",
+        "country":"Argentina",
+        "timezone": "America/Argentina/Buenos_Aires"
+    },
+    {
+        "city": "Moscow",
+        "country":"Russia",
+        "timezone": "Europe/Moscow"
+    },
+    {
+        "city": "Melbourne",
+        "country":"Australia",
+        "timezone": "Australia/Melbourne"
+    },
+    {
+        "city": "Berlin",
+        "country":"Germany",
+        "timezone": "Europe/Berlin"
+    },
+    {
+        "city": "Mumbai",
+        "country":"India",
+        "timezone": "Asia/Kolkata"
     }
+
 ]

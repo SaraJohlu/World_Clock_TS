@@ -18,3 +18,16 @@ export const LocalStorage = (): City[] => {
 export const AddToLocalStorage = (city: City[]) => {
     localStorage.setItem(storageKey, JSON.stringify(city))
 };
+
+export const RemoveFromLocalStorage = (removeCity: City) => {
+    const saved = LocalStorage();
+
+    const updatedList = saved.filter((c) =>
+         !(c.city.toLowerCase() === removeCity.city.toLowerCase() &&
+           c.country.toLowerCase() === removeCity.country.toLowerCase()
+        )
+    );
+    
+    localStorage.setItem(storageKey, JSON.stringify(updatedList));
+    return updatedList;
+}

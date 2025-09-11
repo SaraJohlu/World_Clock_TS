@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/citiesStyle.css";
+import "../Styles/HomeCitiesStyle.css";
 import type { City } from "./CityData";
 import defaultCities from "../defaultCities.json";
 
@@ -34,6 +34,8 @@ we can now see the local time*/
 
   return (
     <main className="defaultCitiesContainer">
+      <h3>App provides already existing cities and the timezones for you to save to favorites.</h3>
+      <p>Take a look on the list below</p>
       <ul>
         {defaultCities.map((city, index) => {
           const saved = cities.some(
@@ -43,7 +45,7 @@ we can now see the local time*/
             <li key={index}>
               {city.city}, {city.country} - {localTime(city.timezone)}
               <button onClick={() => AddCity(city)} disabled={saved}>
-                &#129505;
+                +
               </button>
             </li>
           );

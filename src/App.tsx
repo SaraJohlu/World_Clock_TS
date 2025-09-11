@@ -7,6 +7,9 @@ import { useEffect } from "react";
 import cityData from "./defaultCities.json";
 import type { City } from "./Components/CityData.tsx";
 import { Route, Routes, Link } from "react-router-dom";
+import { HeaderImgShuffle } from "./Components/ImgShuffle.tsx";
+
+import "./Styles/App.css";
 
 export default function App() {
   const [cities, setCities] = useState<City[]>(() => {
@@ -21,20 +24,27 @@ export default function App() {
 
   return (
     <main>
+      <HeaderImgShuffle />
       <nav>
-          <Link to="/">Home</Link>
-          <Link to="/saved">Saved Cities</Link>
-          <Link to="/add">Add city</Link>
+        <Link to="/">Home</Link>
+        <Link to="/saved">Saved Cities</Link>
+        <Link to="/add">Add city</Link>
       </nav>
-
-      <h1>World Clock</h1>
-      <p>Everyone Has Their Own Timezone</p>
+      
 
       <Routes>
-        <Route path="/" element={<HomeCities cities={cities} setCities={setCities} />} />
-        <Route path="/saved" element={<SavedCities cities={cities} />} />
-        <Route path="/add" element={<AddNewCity newCity={cities} setNewCity={setCities} />}/>
+        <Route
+          path="/"
+          element={<HomeCities cities={cities} setCities={setCities} />}
+        />
+        <Route path="/saved" element={<SavedCities cities={cities} setCities={setCities} />} />
+        <Route
+          path="/add"
+          element={<AddNewCity newCity={cities} setNewCity={setCities} />}
+        />
       </Routes>
-      </main>
+
+      <footer><p>© Sara Johnson Lundén: a Johlu creation</p></footer>
+    </main>
   );
 }

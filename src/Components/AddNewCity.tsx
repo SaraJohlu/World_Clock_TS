@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { City } from "./CityData"; // Imports City interface from CityData.tsx file.
 import worldsTimezones from "../worldsTimezones.json";
 import { storageKey } from "./Localstorage";
+import "../Styles/AddCityStyle.css"
 
 //Using props to use from parent component which is Cities.tsx
 interface propsCity {
@@ -18,6 +19,7 @@ export const AddNewCity: React.FC<propsCity> = ({ newCity, setNewCity }) => {
   const [searchTz, setSearchTz] = useState("");
   const [okMessage, setOkMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [showSuggest, setShowSuggets] = useState(false)
 
   //An array that's going to have two properties all the time.
   //This is an empty array
@@ -79,14 +81,20 @@ export const AddNewCity: React.FC<propsCity> = ({ newCity, setNewCity }) => {
       {okMessage && <p>{okMessage}</p>}
 
       <span>
-
         <input
           type="text"
           placeholder="Search timezone"
           value={searchTz}
-          onChange={(e) => setSearchTz(e.target.value)}
-        />
-        {searchTz && FilterTzObjects.length > 0 && (
+          onFocus={() => setShowSuggets(true)}
+          onBlur={() => setTimeout(() => setShowSuggets(false), 150)}
+          onChange={(e) => {
+            setSearchTz(e.target.value);
+            setShowSuggets(true);
+           }}
+
+           />
+        
+        {showSuggest && searchTz && FilterTzObjects.length > 0 && (
           <ul>
             {FilterTzObjects.map((tz) => (
               <li
@@ -94,7 +102,9 @@ export const AddNewCity: React.FC<propsCity> = ({ newCity, setNewCity }) => {
                 onClick={() => {
                   setAddCity((prev) => ({ ...prev, timezone: tz.timezone }));
                   setSearchTz(tz.timezone); // going to fill in the input field automatically
+                  setShowSuggets(false)
                 }}
+               
               >
                 {tz.timezone} (UTC{tz.offset})
               </li>
