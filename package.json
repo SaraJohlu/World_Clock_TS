@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SaraJohlu.github.io/World_Clock_TS/",
+  "homepage": "https://SaraJohlu.github.io/World_Clock_TS",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

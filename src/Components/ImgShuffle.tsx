@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import "../Styles/HomeCitiesStyle.css";
+import "../../public/london.jpg"
+import "../../public/new-york.jpg"
+import "../../public/stockholm.jpg"
 
 const images = ["new-york.jpg", "stockholm.jpg", "london.jpg"];
 
