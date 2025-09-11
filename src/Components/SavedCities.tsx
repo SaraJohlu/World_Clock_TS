@@ -1,4 +1,4 @@
- import type { City } from "./CityData"
+import type { City } from "./CityData"
 
 interface SavedCitiesProps {
   cities: City[]; // Add from App.tsx

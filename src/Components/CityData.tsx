@@ -1,5 +1,5 @@
 
-  // Component to display the default cities that is imported from the json file
+// Exporting the interface City to reuse it in the other components
   export interface City {
     city: string;
     country: string;

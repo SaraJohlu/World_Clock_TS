@@ -1,4 +1,4 @@
-
+// Handels the localstorage function and provides a special key for it.
 type City = {
   city: string;
   country: string;
