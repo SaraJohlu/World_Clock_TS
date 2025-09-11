@@ -30,7 +30,7 @@ export const SavedCities: React.FC<SavedCitiesProps> = ({ cities, setCities }) =
       new Date(new Date(clockNow).toLocaleString("sv-SE", {timeZone: timezone})
     );
   
-
+//Function that make it possible for user to erase a city from saved.
   const handleRemove = (city: City) => {
     const update = RemoveFromLocalStorage(city);
     setCities(update);

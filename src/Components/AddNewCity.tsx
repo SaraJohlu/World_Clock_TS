@@ -102,7 +102,7 @@ export const AddNewCity: React.FC<propsCity> = ({ newCity, setNewCity }) => {
                 onClick={() => {
                   setAddCity((prev) => ({ ...prev, timezone: tz.timezone }));
                   setSearchTz(tz.timezone); // going to fill in the input field automatically
-                  setShowSuggets(false)
+                  setShowSuggets(false) //The pop up with all timezones cwill be closed if user press outside or chose one from list
                 }}
                
               >
