@@ -30,7 +30,7 @@ export const SavedCities: React.FC<SavedCitiesProps> = ({
         <h2>Save the favorites!</h2>
         <p>All the added and favorite cities are showing here.</p>
       </section>
-      {cities.length === 0 && <p className="NoSavedCities">Oh no, you have no saved cities yet!</p>};
+      {cities.length === 0 && <p className="NoSavedCities">Oh no, you have no saved cities yet!</p>}
       {cities.length > 0 && (
         <ul>
           {cities.map((city, index) => (

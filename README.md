@@ -11,3 +11,7 @@
 
 ## Save to Localstorage
 
+
+
+## Style
+Personligen är jag inte alls nöjd med hur gränsnittet ser ut, men tidsmässigt kände inte jag att jag hade den tiden att utveckla det som jag velat. 

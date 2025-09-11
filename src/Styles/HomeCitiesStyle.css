@@ -1,9 +1,11 @@
+@media screen and (max-width: 480px) {
 .defaultCitiesContainer {
     margin: 20px 0 0 0;
-    padding: 0;
-    width: 95%;
-    height: 50vh;
-    border-radius: 2px;
+    padding: 20px 0 20px 0;
+    width: 90%;
+    height: 45vh;
+    border-radius: 5px;
+    background-color: rgba(51, 50, 50, 0.179);
 }
 .defaultCitiesContainer h3 {
     text-align: center;
@@ -24,7 +26,7 @@
 }
 .defaultCitiesContainer ul {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     list-style: none;
     width: 90%;
 
@@ -33,6 +35,9 @@
     align-items: center;
     overflow-y: scroll ;
     overflow-x: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
 
 }
 .defaultCitiesContainer li {
@@ -50,16 +55,160 @@
 }
 
 .defaultCitiesContainer button {
-    width: 7vw;
+    width: 5vw;
     height: 3vh;
     border-radius: 100%;
     font-size:medium;
     color: green;
     box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+    border: none;
 
     margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+}
 
+@media screen and ((min-width:481px) and (max-width: 1024px)){
+    .defaultCitiesContainer {
+    margin: 20px 0 0 0;
+    padding: 20px 0 20px 0;
+    width: 90%;
+    height: 45vh;
+    border-radius: 5px;
+    background-color: rgba(51, 50, 50, 0.179);
+}
+.defaultCitiesContainer h3 {
+    text-align: center;
+    width: 98%;
+    
+    font-size: large;
+    font-weight: 400;
+
+    margin: 0 ;
+}
+.defaultCitiesContainer p {
+    text-align: center;
+    width: 90%;
+    font-size: medium;
+
+    margin: 2px;
+    padding: 0 0 10px 0;
+}
+.defaultCitiesContainer ul {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+
+}
+.defaultCitiesContainer li {
+    height: 6vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.defaultCitiesContainer button {
+    width: 4vw;
+    height: 4vh;
+    border-radius: 100%;
+    font-size:medium;
+    color: green;
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+    border: none;
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media screen and ((min-width:1025px) and (max-width: 1280px)){
+    .defaultCitiesContainer {
+    margin: 20px 0 0 0;
+    padding: 20px 0 20px 0;
+    width: 94%;
+    height: 45vh;
+    background-color: rgba(88, 87, 87, 0.115);
+    box-shadow: 1px 1px 5px 1px grey;
+}
+.defaultCitiesContainer h3 {
+    text-align: center;
+    width: 98%;
+    
+    font-size: medium;
+    font-weight: 400;
+    margin: 0 ;
+}
+.defaultCitiesContainer p {
+    text-align: center;
+    width: 90%;
+    font-size: small;
+
+    margin: 2px;
+    padding: 0 0 10px 0;
+}
+.defaultCitiesContainer ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    border-radius: 5px;
+
+}
+.defaultCitiesContainer li {
+    height: 6vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.defaultCitiesContainer button {
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100%;
+    font-size:medium;
+    color: green;
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(29, 29, 29, 0.407);
+    border: none;
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

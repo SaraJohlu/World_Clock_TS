@@ -1,3 +1,5 @@
+
+@media screen and (max-width: 480px){
 .SavedCityContainer {
     display: flex;
     flex-direction: column;
@@ -5,19 +7,25 @@
     justify-content: space-around;
     align-items: center;
 
-    width: 95%;
+    width: 94%;
     height: 50vh;
-    
+
+    border-radius: 5px;
+    background-color: rgba(88, 87, 87, 0.115);
+    box-shadow: 1px 1px 5px 1px grey;
+    margin: 15px 0 0 0;
+    padding: 10px 5px 10px 5px;
 }
 
 .SavedCityText h2 {
     font-size: larger;
-    margin: 0;
+    margin: 0 0 2px 0;
+    text-align: center;
 }
 
 .SavedCityText p {
     font-size: large;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .SavedCityContainer ul {
@@ -54,15 +62,173 @@
 }
 
 .SavedCityContainer button {
-    width: 6vw;
-    height: 3vh;
+    width: 4vw;
+    height: 5vh;
     border-radius: 100%;
-    font-size:medium;
+    font-size:x-small;
     color: rgb(128, 0, 0);
-    box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(13, 13, 13, 0.152);
+    border: none;
 
     margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+}
+
+@media screen and ((min-width:481px) and (max-width: 1024px)){
+    .SavedCityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 94%;
+    height: 50vh;
+
+    border-radius: 5px;
+    background-color: rgba(88, 87, 87, 0.115);
+    box-shadow: 1px 1px 5px 1px grey;
+    margin: 15px 0 0 0;
+    padding: 10px 5px 10px 5px;
+}
+
+.SavedCityText h2 {
+    font-size: larger;
+    margin: 0 0 2px 0;
+    text-align: center;
+}
+
+.SavedCityText p {
+    font-size: large;
+    margin: 0 0 15px 0;
+}
+
+.SavedCityContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+}
+
+.SavedCityContainer li {
+    height: 6vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.NoSavedCities{ 
+    font-size: large;
+    font-weight: 700;
+}
+
+.SavedCityContainer button {
+    width: 4vw;
+    height: 5vh;
+    border-radius: 100%;
+    font-size:small;
+    color: rgb(128, 0, 0);
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(13, 13, 13, 0.152);
+    border: none;
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media screen and ((min-width:1025px) and (max-width: 1280px)){
+    .SavedCityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 94%;
+    height: 50vh;
+
+    border-radius: 5px;
+    background-color: rgba(88, 87, 87, 0.115);
+    box-shadow: 1px 1px 5px 1px grey;
+    margin: 15px 0 0 0;
+    padding: 10px 5px 10px 5px;
+}
+
+.SavedCityText h2 {
+    font-size: larger;
+    margin: 0 0 2px 0;
+    text-align: center;
+}
+
+.SavedCityText p {
+    font-size: large;
+    margin: 0 0 15px 0;
+}
+
+.SavedCityContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+}
+
+.SavedCityContainer li {
+    height: 6vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.NoSavedCities{ 
+    font-size: large;
+    font-weight: 700;
+}
+
+.SavedCityContainer button {
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100%;
+    font-size:small;
+    color: rgb(128, 0, 0);
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(13, 13, 13, 0.152);
+    border: none;
+
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
