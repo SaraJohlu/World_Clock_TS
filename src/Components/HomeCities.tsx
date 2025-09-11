@@ -43,7 +43,7 @@ we can now see the local time*/
           );
           return (
             <li key={index}>
-              {city.city}, {city.country} - {localTime(city.timezone)}
+              <strong>{city.city}, {city.country}</strong><p>{localTime(city.timezone)}</p>
               <button onClick={() => AddCity(city)} disabled={saved}>
                 +
               </button>

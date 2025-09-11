@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 649px) {
 .addCityContainer {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
 }
 }
 
-@media screen and ((min-width: 481px) and (max-width:1024px)) {
+@media screen and ((min-width: 650px) and (max-width:1024px)) {
 .addCityContainer {
     display: flex;
     flex-direction: column;
@@ -142,6 +142,77 @@
 }
 
 @media screen and ((min-width: 1025px) and (max-width:1280px)) {
+.addCityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 95%;
+    height: 45vh;
+}
+
+.addCityContainer h1 {
+    font-size: large;
+}
+ .addCityContainer span {
+    width: 50%;
+    height: 35vh;
+    padding: 40px;
+ }
+.addCityContainer input {
+    width: 60%;
+    height: 4vh;
+
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.addCityContainer ul {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    width: 100%;
+    height: 15vh;
+    font-size: small;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.addCityContainer li {
+    height: 4vh;
+    width: 100%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.addCityContainer button {
+    width: 6vw;
+    height: 4vh;
+    color: green;
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(13, 13, 13, 0.273);
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+}
+
+@media screen and (min-width: 1281px) {
 .addCityContainer {
     display: flex;
     flex-direction: column;

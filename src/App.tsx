@@ -27,17 +27,17 @@ export default function App() {
       <HeaderImgShuffle />
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/saved">Saved Cities</Link>
+        <Link to="/saved">Default Cities</Link>
         <Link to="/add">Add city</Link>
       </nav>
       
 
       <Routes>
         <Route
-          path="/"
+          path="/saved"
           element={<HomeCities cities={cities} setCities={setCities} />}
         />
-        <Route path="/saved" element={<SavedCities cities={cities} setCities={setCities} />} />
+        <Route path="/" element={<SavedCities cities={cities} setCities={setCities} />} />
         <Route
           path="/add"
           element={<AddNewCity newCity={cities} setNewCity={setCities} />}
