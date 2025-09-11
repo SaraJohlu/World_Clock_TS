@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../Styles/HomeCitiesStyle.css";
 
-const images = ["stockholm.jpg", "/public/new-york.jpg", "/public/london.jpg"];
+const images = ["stockholm.jpg", "new-york.jpg", "london.jpg"];
 
 //function with useSatet and useEffect that will Shuffle images in array evey 4 seconds.
 //After it has shuffled every img in array it will clean up and start over.
