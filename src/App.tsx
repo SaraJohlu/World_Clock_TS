@@ -1,4 +1,4 @@
-import { HomeCities } from "./Components/HomeCities.tsx";
+import { DefaultCities } from "./Components/DefaultCities.tsx";
 import { SavedCities } from "./Components/SavedCities.tsx";
 import { AddNewCity } from "./Components/AddNewCity.tsx";
 import { useState } from "react";
@@ -35,7 +35,7 @@ export default function App() {
       <Routes>
         <Route
           path="/saved"
-          element={<HomeCities cities={cities} setCities={setCities} />}
+          element={<DefaultCities cities={cities} setCities={setCities} />}
         />
         <Route path="/" element={<SavedCities cities={cities} setCities={setCities} />} />
         <Route

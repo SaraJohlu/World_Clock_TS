@@ -10,7 +10,7 @@ interface propsCities {
 }
 
 /*getting our JSON file with props with the default cities that is already coded in the apps data.*/
-export const HomeCities: React.FC<propsCities> = ({ cities, setCities }) => {
+export const DefaultCities: React.FC<propsCities> = ({ cities, setCities }) => {
   /*Function that converts the timezone into local time, instead of seeing which timezone the country/city is in
 we can now see the local time*/
   const localTime = (timezone: string) => {
