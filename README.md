@@ -1,34 +1,32 @@
-# World Clock Application 
-<b>Sara Johnson Lundén</b>
-klass: KYHA-FE2024
-TypeScript examinations uppgift
+# World clock - Examinations uppgift i kurs TypeScript
+<b><i>Applikation som visar världens alla städers olika tid zoner och konverterar det till tid</i></b>   
+KYHA_FE2024   
+Sara JL 
 
-# The App, World Clock
-Applikation skapad med TypeScript och React med Vite. 
+## Dokumentation
+TypeScript har många fördelar, men det tar sin tid att lära sig. 
+I min applikation har jag använt props (så som propsCity, savedCitiesProps, propsCties) i många av mina komponenter för att sedan använda de vid "kallning" i
+"föräldra" komponenten App av funktioner från de andra komponenterna.    
+Det positiva har varit alla de röda understrukna orden som förekommit, istället för att programmet kraschar och   
+jag sedan behövt sitta flera timmar med att läsa av error meddelanden i consolen. Där av en stor fördel med att använda TypeScript!
+Props måste dock användas på rätt sätt och där kommer det behövas nöta mer. 
 
-<b>Komponenter jag skapat för detta projekt är</b>
-- <underline>HomeCities.tsx</underline>: Fungerar som default, i denna har jag 20 större städer samt deras tidzoner som ska fungera som default cities för användaren.   
-Datan hämtas ifrån JSON filen defaultCities.json.
-Denna komponent möjliggör också att man kan spara, "Favorisera", dessa städer genom en knapp. OnClick funktion på knappen skickar in den staden in i 
-Localstorage.tsx som innehåller funktioner där det användaren vill spara sparas i en array som sparas ner på localstorage.
+Jag har använt mig av ett och samma interface för City hantering. Lätt att uppdatera alla komponenter istället för att skapa flera olika.   
+Dessutom meddelar TS att alla filer med samma interface måste ändras vid någon ändring av interface. Mina props har varit kopplade med detta interface   
+vilket ledd till att programmet alltid skickat in data i en och samma array. 
 
+## Loggbok - Min arbetsprocess
 
-## App
-I App.tsx använder jag Routes för att användaren lätt ska kunna navigera genom de komponenter som min applikation innehåller. Det renderar också snabbare. 
+### Planringen
+Använde den klassiska papper och penna tillsammans med Figjam. Började med att skissa upp hur jag ville att applikationen skulle se ut.   
+Vilka komponenter jag tänkte att jag skulle behöva ha, hur jag själv kände att appen skulle se ut rent stilmässigt. Vidare i figma började jag   
+skapa userstories, en egen kanban tavla för att hålla reda på min arbetsprocess. Jag mappade upp mina tankar i en mindmap/brainstorm.   
 
-## Default Cities
-- worldsTimezone.json: is the JSOn file that provides the worlds all different timezones when wanting to add new City or country to the application as a user. The list is devided into timezones continentials. Instead of doing a dropdown menu of all the countries and its cities, I'll put it in timezone categories.
-- Mark as favorite and adding new city/country: Doing this as a user will save the data to localstorage. 
+Skissen av själva applikationen var trög, jag fick inga bra idéer och blev en aning stressad över att hjärnan inte riktigt ville arbeta med mig.   
+Därav är jag inte super nöjd med hur min stil av applikationen just nu ser ut. Det blev styling under arbetsprocessen av koden, vilket jag egentligen inte gillar. 
+Brukar ha en prototyp att gå efter annars.   
 
-## Save and starmark the default cities
-- defaultCities.json: Is the JSON file that will provide the already existing countries and cities when you use the application. They are configured in city, country and Timezone. The IANA-timezone format is going to be converted into time with Intl.DateTimeFormat. This will display the time and not the name of the timezone on page.
+https://www.figma.com/board/myu7CTty2nDMta5QhXIupT/Untitled?node-id=0-1&t=yUTS9vaxV9nnZZUH-1   
+Nedan är min figjam som visar lite hur jag har planerat under resans gång. Det är inte allt då mycket finns i huvudet.
 
-## Add a new city to our list of cities
-
-## Save to Localstorage
-
-# Loggbok
-
-
-## Style
-Personligen är jag inte alls nöjd med hur gränsnittet ser ut, men tidsmässigt kände inte jag att jag hade den tiden att utveckla det som jag velat. 
+### Applikationen
