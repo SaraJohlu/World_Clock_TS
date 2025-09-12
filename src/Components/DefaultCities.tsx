@@ -31,7 +31,7 @@ we can now see the local time*/
       return [...prev, city];
     });
   };
-
+// Return the defaultCities container that with Routes will render on App.tsx
   return (
     <main className="defaultCitiesContainer">
       <h3>App provides already existing cities and the timezones for you to save to favorites.</h3>
